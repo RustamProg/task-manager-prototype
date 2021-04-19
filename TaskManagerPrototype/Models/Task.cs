@@ -17,8 +17,8 @@ namespace TaskManagerPrototype.Models
         [Column(TypeName = "nvarchar(200)")]
         public string CreatedAtDateTime { get; set; }
         
-        public int AuthorId { get; set; }
-        [ForeignKey("AuthorID")]
+        public int UserId { get; set; }
+
         public User User { get; set; }
     }
 }
